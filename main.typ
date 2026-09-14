@@ -10,12 +10,14 @@
 
 This course is intended to give you the experience of working in an
 active research environment, and prepare you for future contributions
-in our area of research. For first time students (AKA first cohort), much of the quarter will be spent skill-building
-and absorbing the #link("https://rust-lang.org/")[Rust] programming
-language, operating systems, security, and more! If you're taking this
-course for the second time (AKA second cohort), welcome back! You will be taking the skills
-you learned the first time around and applying them towards active research
-directions in the lab. Additionally, everyone will participate in
+in our area of research.
+// For first time students (AKA first cohort), much of the quarter will be spent skill-building
+// and absorbing the #link("https://rust-lang.org/")[Rust] programming
+// language, operating systems, security, and more! If you're taking this
+// course for the second time (AKA second cohort), welcome back! You will be taking the skills
+// you learned the first time around and applying them towards active research
+// directions in the lab.
+Additionally, everyone will participate in
 weekly paper readings in the field.
 
 = Learning Outcomes
@@ -29,36 +31,38 @@ By the end of this quarter you should be able to...
 
 - Contribute towards current research directions within the lab.
 
-= Schedule
+- Gain research skills that stick with you beyond your participation in the lab.
 
-As this is a small research-oriented class that we're currently restructuring and developing,
-there isn't a concrete week-by-week schedule yet.
+// = Schedule
 
-However, we can describe what the quarter is going to look like for each cohort.
+// As this is a small research-oriented class that we're currently restructuring and developing,
+// there isn't a concrete week-by-week schedule yet.
 
-== First Cohort
+// However, we can describe what the quarter is going to look like for each cohort.
 
-As a member of the first cohort, you will be spending the first
-5-7 weeks learning different aspects of the Rust language,
-and applying that knowledge in lab assignments. Some
-of these lab assignments will include working with the
-#link("https://github.com/twizzler-operating-system/twizzler")[Twizzler operating system].
-The last few weeks exist as spacers; if we need more time to continue
-building Rust skills, we will use those weeks to do so. If the cohort
-is ready to do so, we will spend the last weeks getting a head start on your
-research interests and/or contributing to Twizzler!
+// == First Cohort
 
-== Second Cohort
-You will be focused on applying the skills you've learned last quarter
-towards research interests of your choosing. During the first / second
-weeks, we will have a list of research projects, and you will choose
-the one that interests you most. Week by week, you will be working with
-the teaching staff to give progress updates and get assistance with any
-blockers. The expectation is that you will have your very own contribution!
+// As a member of the first cohort, you will be spending the first
+// 5-7 weeks learning different aspects of the Rust language,
+// and applying that knowledge in lab assignments. Some
+// of these lab assignments will include working with the
+// #link("https://github.com/twizzler-operating-system/twizzler")[Twizzler operating system].
+// The last few weeks exist as spacers; if we need more time to continue
+// building Rust skills, we will use those weeks to do so. If the cohort
+// is ready to do so, we will spend the last weeks getting a head start on your
+// research interests and/or contributing to Twizzler!
+
+// == Second Cohort
+// You will be focused on applying the skills you've learned last quarter
+// towards research interests of your choosing. During the first / second
+// weeks, we will have a list of research projects, and you will choose
+// the one that interests you most. Week by week, you will be working with
+// the teaching staff to give progress updates and get assistance with any
+// blockers. The expectation is that you will have your very own contribution!
 
 
-Both cohorts will also participate in paper readings and discussions
-throughout the quarter.
+// Both cohorts will also participate in paper readings and discussions
+// throughout the quarter.
 
 
 = Course Staff
@@ -93,39 +97,39 @@ Since this is a smaller group, most asynchronous communication will happen
 through the LSD lab Zulip (but we may send some announcements both Zulip and Canvas).
 
 
-Course Meetings will be held as follows.
-#let staff = (
-  ("Tuesday", "Surendra"),
-  ("Thursday", "Max"),
-)
+// Course Meetings will be held as follows.
+// #let staff = (
+//   ("Tuesday", "Surendra"),
+//   ("Thursday", "Max"),
+// )
 
-#align(center)[
-  #table(
-    columns: (auto, auto, auto, auto),
-    [*Day*], [*Time*], [*TA*], [*Room*],
-    ..staff
-      .map(((day, ta)) => (
-        [#day],
-        [2pm-5pm],
-        [#ta],
-        [E2-398],
-      ))
-      .flatten(),
-  )
-]
+// #align(center)[
+//   #table(
+//     columns: (auto, auto, auto, auto),
+//     [*Day*], [*Time*], [*TA*], [*Room*],
+//     ..staff
+//       .map(((day, ta)) => (
+//         [#day],
+//         [2pm-5pm],
+//         [#ta],
+//         [E2-398],
+//       ))
+//       .flatten(),
+//   )
+// ]
 
-Each three-hour block will be structured like so:
+// Each three-hour block will be structured like so:
 
-The first 30-60 minutes will be literature review, where we
-discuss core ideas from a paper. Then, we will have time for
-status updates from each person on their lab assignments / research project (depending
-on the cohort).
+// The first 30-60 minutes will be literature review, where we
+// discuss core ideas from a paper. Then, we will have time for
+// status updates from each person on their lab assignments / research project (depending
+// on the cohort).
 
-Then we will take a quick break, and then flow into work time. Feel free to
-use this time to ask TAs any questions you have, collaborate with peers
-on lab assignments, or work on journal entries. We will do our best to make
-lab an awesome place to work, and take everyone's input to
-make that happen, whether that be nicer peripherals, snacks, etc.
+// Then we will take a quick break, and then flow into work time. Feel free to
+// use this time to ask TAs any questions you have, collaborate with peers
+// on lab assignments, or work on journal entries. We will do our best to make
+// lab an awesome place to work, and take everyone's input to
+// make that happen, whether that be nicer peripherals, snacks, etc.
 
 = Grading
 
