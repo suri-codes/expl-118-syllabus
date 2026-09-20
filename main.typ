@@ -1,8 +1,8 @@
 #import "./template.typ": template
 #show: template.with(
   title: "End-to-End Systems Security",
-  quarter: "Spring 2026",
-  course: "CMPM 118 - 13",
+  quarter: "Fall 2026",
+  course: "EXPL 118 - 13",
 )
 
 
@@ -10,15 +10,14 @@
 
 This course is intended to give you the experience of working in an
 active research environment, and prepare you for future contributions
-in our area of research.
-// For first time students (AKA first cohort), much of the quarter will be spent skill-building
-// and absorbing the #link("https://rust-lang.org/")[Rust] programming
-// language, operating systems, security, and more! If you're taking this
-// course for the second time (AKA second cohort), welcome back! You will be taking the skills
-// you learned the first time around and applying them towards active research
-// directions in the lab.
-Additionally, everyone will participate in
-weekly paper readings in the field.
+in our area of research. For first time students (AKA first cohort),
+much of the quarter will be spent skill-building and absorbing the
+#link("https://rust-lang.org/")[Rust] programming language, operating
+systems, security, and more! If you're taking this course for the second
+time (AKA second cohort), welcome back! You will be taking the skills you
+learned the first time around and applying them towards active research
+directions in the lab. Additionally, everyone will participate in weekly
+paper readings in the field.
 
 = Learning Outcomes
 
@@ -93,8 +92,8 @@ Please reach out to us via email if you have not been added yet.
 
 = Course Logistics
 
-Since this is a smaller group, most asynchronous communication will happen
-through the LSD lab Zulip (but we may send some announcements both Zulip and Canvas).
+Most asynchronous communication will happen through the LSD lab Zulip
+(but we may send some announcements both Zulip and Canvas).
 
 
 // Course Meetings will be held as follows.
@@ -133,16 +132,15 @@ through the LSD lab Zulip (but we may send some announcements both Zulip and Can
 
 = Grading
 
-The two cohorts will have different grading criteria.
-
-
-== First Cohort
-
 #let components = (
-  ("Participation", 30),
-  ("Lab Assignments", 30),
-  (" Mid Quarter Notebook review", 10),
-  (" Final Notebook review", 30),
+  ("Attendance", 10),
+  ("Mid Quarter Notebook Review", 5),
+  ("Final Notebook Review", 15),
+  ("Assignments", 10),
+  ("Final Report", 20),
+  ("Final Presentation", 15),
+  ("Peer Evaluations", 10),
+  ("Active Contribution", 15),
 )
 
 #align(center)[
@@ -160,41 +158,34 @@ The two cohorts will have different grading criteria.
   )
 ]
 
-== Second Cohort
-
-#let components = (
-  ("Participation", 30),
-  ("Research Project", 30),
-  (" Mid Quarter Notebook review", 10),
-  (" Final Notebook review", 30),
-)
-
-#align(center)[
-  #table(
-    columns: (auto, auto),
-    stroke: none,
-    align: (center, center),
-    [*Category*], [*Weight*],
-    ..components
-      .map(((name, weight)) => (
-        [#name],
-        [#weight%],
-      ))
-      .flatten(),
-  )
-]
 
 #pagebreak()
-== Participation
+== Attendance
 
-Participation consists of class attendance, taken by TAs throughout the
-class session, and participating in weekly paper discussions.
+Attendance will be taken every class session. You are allowed 2 unexcused absences
+but if something comes up, please get in touch with course staff before your absence.
 
-*Note:* As we are aware that not everyone can make it to both sessions,
-you will get full participation credit for the week if you attend
-at least one session.
 
-However, we encourage you to attend both sections if you can!
+== Lab Notebooks
+
+All students are expected to maintain a *Research Notebook* to document their
+weekly progress, things they find interesting, to-do items etc.
+
+Your notebook must be an instantiation of this #link("https://github.com/suri-codes/expl-118-syllabus")[template repository].
+
+=== Mid Quarter Notebook Review
+
+During week 5, you will be expected to submit your notebook to a TA, in the form
+of a GitHub repository link. This review is intended to be a check-in to help you
+make sure you're working on your notebook properly.
+
+=== Final Notebook Review
+
+You will submit your final notebook the same way as the mid quarter review.
+The course staff will evaluate it as a whole and assign it a grade. Note
+that if we requested improvements during your Mid Quarter review, and the notebook
+entries since then incorporate those improvements, you will not be penalized for
+the first half of the notebook!
 
 == Lab Assignments (First Cohort)
 
@@ -232,44 +223,6 @@ Your final grade in this category will be decided by how well you executed
 your goal, lessons learned, any resulting artifacts, etc. This will vary
 per project so work closely with the course staff!
 
-== Lab Notebooks
-
-All students are expected to maintain a *Lab Notebook* to document their
-weekly progress, things they find interesting, to-do items etc.
-We borrow our notion of notebooks from the #link("https://www.vip-consortium.org/vip-handbook/vip-notebooks-0")[Georgia Tech VIP program]
-
-You will fill out an entry each week answering the following questions.
-
-- What did you do this week?
-- What do you plan to do in the coming week?
-- What, if anything, piqued your interest in the work you did this week?
-
-Additionally for your last notebook entry, you will also write a reflection
-on the work you've done for the whole quarter. More details will be released
-towards the end of the quarter.
-
-We expect the notebook to be a collection of dated Markdown files,
-hosted on GitHub. Please ask the TAs if you need help setting up a notebook.
-All we require is that each entry is its own file, and each file
-is dated the day you wrote it.
-
-We will roughly be following this #link("http://sites.gatech.edu/vipsiteresources/wp-content/uploads/sites/1221/2020/06/VIP-simple-notebook-rubric.docx")[rubric] from GTech.
-We will release our own, more specific rubric before the *Mid Quarter Notebook
-Review*, but it will be roughly in line with the link above.
-
-=== Mid Quarter Notebook Review
-
-During week 5, you will be expected to submit your notebook to a TA, in the form
-of a GitHub repository link. This review is intended to be a check-in to help you
-make sure you're working on your notebook properly.
-
-=== Final Notebook Review
-
-You will submit your final notebook the same way as the mid quarter review.
-The course staff will evaluate it as a whole and assign it a grade. Note
-that if we requested improvements during your Mid Quarter review, and the notebook
-entries since then incorporate those improvements, you will not be penalized for
-the first half of the notebook!
 
 
 == Grading scale
@@ -319,8 +272,7 @@ is *prohibited* in the following activities, since we have designed them to be t
 when completed without AI assistance:
 
 - Any and all writing work, including all parts of your notebook.
-
-- Lab Assignments.
+- Assignments.
 
 If you find yourself needing help with any aspect of the class, feel free
 to reach out to your peers and course staff first!
